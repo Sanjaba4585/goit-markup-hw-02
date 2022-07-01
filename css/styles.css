@@ -1,0 +1,61 @@
+:root{
+    --primary-text-color: #757575;
+    --title-text-color:#212121;
+    --accent-color:#2196F3;
+    --primary-white-color:#FFFFFF
+}
+
+
+body{
+background-color: var(--primary-bg-colo);
+color: var(--primary-text-color);
+
+}
+
+ul{
+    list-style: none;
+}
+/* цвет основного текста #212121 */
+/* вторичный цвет текса  #757575 */
+/* акцент #2196F3 */
+/* белый #FFFFFF */
+/* цвет текста футер rgba(255, 255, 255, 0.6); */
+/* вторичный цвет фона #F5F4FA */
+
+
+.logo:hover{
+    color: var(--title-text-color);
+}
+/* site-nav */
+.site-nav .link{
+color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav.lin:focus {
+color: var(--accent-color);
+}
+
+/* section */
+.section-title{
+    color: var(--title-text-color)
+}
+
+/* hero */
+.hero-title{
+   color: #FFFFFF; 
+
+}
+
+/* feature */
+.feature-list .title{
+    color: var(--primary-text-color)
+}
+
+/* comand */
+.comand-list .title{
+    color: var(--primary-text-color)
+}
+.hero.button{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
