@@ -1,20 +1,17 @@
-:root{
+:root {
     --primary-text-color: #757575;
-    --title-text-color:#212121;
-    --accent-color:#2196F3;
-    --primary-white-color:#FFFFFF
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --primary-white-color: #ffffff;
 }
 
-
-body{
-background-color: var(--primary-bg-colo);
-color: var(--primary-text-color);
-
+body {
+    background-color: var(--primary-bg-colo);
+    color: var(--primary-text-color);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
 
-ul{
-    list-style: none;
-}
 /* цвет основного текста #212121 */
 /* вторичный цвет текса  #757575 */
 /* акцент #2196F3 */
@@ -22,40 +19,75 @@ ul{
 /* цвет текста футер rgba(255, 255, 255, 0.6); */
 /* вторичный цвет фона #F5F4FA */
 
-
-.logo:hover{
-    color: var(--title-text-color);
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px solid red;
 }
+.logo {
+    color: var(--title-text-color);
+    font-family: raleway, cursive;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo:hover {
+    color: var(--accent-color);
+}
+
+button {
+    font-family: inherit;
+}
+
 /* site-nav */
-.site-nav .link{
-color: var(--title-text-color);
+.site-nav .link {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+
+    line-height: 1.14;
+    font-size: 14px;
+    letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav.lin:focus {
-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* section */
-.section-title{
-    color: var(--title-text-color)
+.section-title {
+    color: var(--title-text-color);
 }
 
 /* hero */
-.hero-title{
-   color: #FFFFFF; 
+.hero-title {
+    color: #212121;
 
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 /* feature */
-.feature-list .title{
-    color: var(--primary-text-color)
+.feature-list .title {
+    color: var(--primary-text-color);
 }
 
 /* comand */
-.comand-list .title{
-    color: var(--primary-text-color)
+.comand-list .title {
+    color: var(--primary-text-color);
 }
-.hero.button{
+.hero.button {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
 }
