@@ -3,10 +3,11 @@
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --primary-white-color: #ffffff;
+    --background-color #E5E5E5: ;
 }
 
 body {
-    background-color: var(--primary-bg-colo);
+    background-color: var(--background-color);
     color: var(--primary-text-color);
     font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
@@ -26,9 +27,8 @@ body {
     border: 1px solid red;
 }
 .logo {
-    color: var(--title-text-color);
+    color: var(--accent-color);
     font-family: raleway, cursive;
-
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -40,32 +40,54 @@ body {
 
 button {
     font-family: inherit;
+    cursor: pointer;
+}
+.button-nav .link {
+color: var(--title-text-color)
+background-colo:#F5F4FA
+font-weight: 500;
+font-size: 16px;
+line-height: 1.53;
+}
+
+.button-nav .link:hover,
+.button-nav .link:focus {
+color: var(--accent-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+color: var(--accent-color);
+}
+.contacts .link{
+    color: var(--primary-text-color)
 }
 
 /* site-nav */
 .site-nav .link {
     color: var(--title-text-color);
-
     font-weight: 500;
-
     line-height: 1.14;
     font-size: 14px;
     letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
-.site-nav.lin:focus {
+.site-nav .link:focus {
     color: var(--accent-color);
 }
 
 /* section */
 .section-title {
     color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 /* hero */
 .hero-title {
-    color: #212121;
-
+    color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -75,12 +97,31 @@ button {
 
 /* feature */
 .feature-list .title {
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.feature-list .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 /* comand */
 .comand-list .title {
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.comand-list .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
 }
 .hero.button {
     color: var(--primary-white-color);
@@ -90,4 +131,55 @@ button {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.works{
+    background-color: #F5F4FA;
+}
+.footer{
+    background-color:#2F303A
+    
+    
+}
+.heroes{
+    background-color: #2F303A
+}
+.footer .link{
+    color: var(--primary-white-color);
+}
+.footer .link:hover,
+.footer .link:focus {
+color: var(--accent-color);
+}
+span{
+    color: var(--primary-white-color);
+
+}
+/* portfolio */
+
+.picture-nav .link{
+ color: var(--title-text-color);
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;    
+
+}
+.picture-nav .text{
+
+color: var(--primary-text-color);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.87;
 }
