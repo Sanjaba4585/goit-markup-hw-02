@@ -3,14 +3,16 @@
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --primary-white-color: #ffffff;
-    --background-color #E5E5E5: ;
+    --background-color #2F303A;
+    
 }
 
 body {
-    background-color: var(--background-color);
+   
     color: var(--primary-text-color);
     font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
+    font-weight: 14px;
 }
 
 /* цвет основного текста #212121 */
@@ -28,7 +30,7 @@ body {
 }
 .logo {
     color: var(--accent-color);
-    font-family: raleway, cursive;
+    font-family: raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -42,17 +44,18 @@ button {
     font-family: inherit;
     cursor: pointer;
 }
-.button-nav .link {
-color: var(--title-text-color)
+.button .hurent {
+color: var(--title-text-color);
 background-colo:#F5F4FA
 font-weight: 500;
 font-size: 16px;
 line-height: 1.53;
 }
 
-.button-nav .link:hover,
-.button-nav .link:focus {
-color: var(--accent-color);
+.button .hurent:hover,
+.button .hurent:focus {
+background-color: var(--accent-color);
+color:#ffffff
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -148,18 +151,30 @@ color: var(--accent-color);
     background-color: #F5F4FA;
 }
 .footer{
-    background-color:#2F303A
-    
+    background-color: #2F303A;
+    height:100%;
+    width:100%;
     
 }
 .heroes{
-    background-color: #2F303A
+    background-color: #2F303A;
+  
+  
 }
-.footer .link{
+.footer .link {
     color: var(--primary-white-color);
 }
-.footer .link:hover,
-.footer .link:focus {
+
+.footer .link{
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: rgba(255, 255, 255, 0.6);
+ 
+}
+.footer .links :hover,
+.footer .links :focus {
 color: var(--accent-color);
 }
 span{
@@ -169,7 +184,7 @@ span{
 /* portfolio */
 
 .picture-nav .link{
- color: var(--title-text-color);
+color: var(--title-text-color);
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -182,4 +197,22 @@ color: var(--primary-text-color);
 font-weight: 400;
 font-size: 16px;
 line-height: 1.87;
+}
+
+.picture-nav .headin{
+ 
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+
+span .adress {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+}
+
+.spanhead{
+    color: var(--title-text-color);
 }
