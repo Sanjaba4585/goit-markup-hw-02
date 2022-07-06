@@ -12,7 +12,7 @@ body {
     color: var(--primary-text-color);
     font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
-    font-weight: 14px;
+    font-size: 14px;
 }
 
 /* цвет основного текста #212121 */
@@ -44,38 +44,49 @@ button {
     font-family: inherit;
     cursor: pointer;
 }
-.button .hurent {
+.button .content{
 color: var(--title-text-color);
-background-colo:#F5F4FA
+background-color:#F5F4FA;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.53;
 }
 
-.button .hurent:hover,
-.button .hurent:focus {
+.content:hover,
+.content:focus {
 background-color: var(--accent-color);
 color:#ffffff
+}
+.content .current {
+    color: var(--accent-color);
 }
 .contacts .link:hover,
 .contacts .link:focus {
 color: var(--accent-color);
 }
 .contacts .link{
-    color: var(--primary-text-color)
+color: var(--primary-text-color);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
 }
 
 /* site-nav */
-.site-nav .link {
-    color: var(--title-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    font-size: 14px;
-    letter-spacing: 0.02em;
+.site-nav .link{
+color: var(--title-text-color);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus{
     color: var(--accent-color);
+}
+
+.link .current {
+color: var(--accent-color);
 }
 
 /* section */
@@ -96,15 +107,16 @@ color: var(--accent-color);
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /* feature */
 .feature-list .title {
     color: var(--title-text-color);
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
 }
 .feature-list .text {
     font-weight: 400;
@@ -128,12 +140,15 @@ color: var(--accent-color);
 }
 .hero.button {
     color: var(--primary-white-color);
-    background-color: var(--accent-color);
-
-    font-weight: 700;
+        font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+}
+
+.hero.button:hover{
+    background-color:var(--accent-color); ;
+
 }
 .visually-hidden {
     position: absolute;
@@ -166,7 +181,7 @@ color: var(--accent-color);
 }
 
 .footer .link{
-
+font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -208,6 +223,7 @@ letter-spacing: 0.06em;
 }
 
 span .adress {
+    
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -216,3 +232,4 @@ line-height: 1.71;
 .spanhead{
     color: var(--title-text-color);
 }
+
