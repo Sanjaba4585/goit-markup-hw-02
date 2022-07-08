@@ -44,7 +44,8 @@ button {
     font-family: inherit;
     cursor: pointer;
 }
-.button .content{
+button .content,
+.button.current{
 color: var(--title-text-color);
 background-color:#F5F4FA;
 font-weight: 500;
@@ -57,8 +58,12 @@ line-height: 1.53;
 background-color: var(--accent-color);
 color:#ffffff
 }
-.content .current {
-    color: var(--accent-color);
+
+
+
+.content.current {
+    background-color: var(--accent-color);
+    color:var(--primary-white-color);
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -67,7 +72,6 @@ color: var(--accent-color);
 .contacts .link{
 color: var(--primary-text-color);
 font-weight: 500;
-font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
@@ -85,7 +89,7 @@ letter-spacing: 0.02em;
     color: var(--accent-color);
 }
 
-.link .current {
+.link.current {
 color: var(--accent-color);
 }
 
@@ -138,16 +142,17 @@ color: var(--accent-color);
     font-size: 16px;
     line-height: 1.19;
 }
-.hero.button {
+.hero button {
     color: var(--primary-white-color);
-        font-weight: 700;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    background-color:var(--accent-color);
 }
 
-.hero.button:hover{
-    background-color:var(--accent-color); ;
+.hero button:hover{
+background-color:#188CE8; 
 
 }
 .visually-hidden {
